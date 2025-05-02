@@ -100,6 +100,9 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground">PostgreSQL, LibSQL</p>
                 </div>
               </div>
+              <div className="space-y-2">
+                If you want to know more about me, check out my <a href="https://nobelsmith.com" className="text-primary font-bold">Blog</a>.  
+              </div>
             </motion.div>
             <motion.div variants={fadeInLeft} className="flex items-center justify-center">
               <div className="relative h-[300px] w-[300px] rounded-full bg-gradient-to-r from-primary to-secondary opacity-20" />
@@ -128,12 +131,12 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <Card className="project-card">
                 <CardHeader>
-                  <CardTitle>Project One</CardTitle>
-                  <CardDescription>A modern web application built with Next.js and Tailwind CSS</CardDescription>
+                  <CardTitle>Portfolio Website</CardTitle>
+                  <CardDescription>A modern web application built with Next.js, Shadcn UI, and Tailwind CSS</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Description of your first project goes here. Explain the technologies used and your role in the project.
+                    You're looking at it! It is a simple and clean portfolio website that showcases my projects and skills.
                   </p>
                 </CardContent>
               </Card>
@@ -143,12 +146,12 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <Card className="project-card">
                 <CardHeader>
-                  <CardTitle>Project Two</CardTitle>
-                  <CardDescription>An innovative solution using React and Node.js</CardDescription>
+                  <CardTitle>Blog</CardTitle>
+                  <CardDescription>A simple blog built with Hugo and the PaperMod theme</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Description of your second project goes here. Highlight the key features and your contributions.
+                    A personal blog where I share my thoughts and insights on technology, golf, and other topics I am passionate about.
                   </p>
                 </CardContent>
               </Card>
