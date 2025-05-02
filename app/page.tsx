@@ -38,7 +38,7 @@ export default function Home() {
           >
             <motion.div variants={fadeInUp} className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                Hi, I'm <span className="text-primary">Nobel Smith</span>
+                Hi, I&apos;m <span className="text-primary">Nobel Smith</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                 A passionate full-stack developer crafting beautiful and functional web experiences
@@ -81,7 +81,7 @@ export default function Home() {
             <motion.div variants={fadeInLeft} className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="text-muted-foreground md:text-xl">
-                I'm a full-stack developer with a passion for creating elegant solutions to complex problems.
+                I&apos;m a full-stack developer with a passion for creating elegant solutions to complex problems.
                 With expertise in modern web technologies, I build applications that are both beautiful and functional. 
                 My experience includes building robust orchestration platforms that handle complex workflows and microservices at scale. 
                 
@@ -136,7 +136,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    You're looking at it! It is a simple and clean portfolio website that showcases my projects and skills.
+                    You&apos;re looking at it! It is a simple and clean portfolio website that showcases my projects and skills.
                   </p>
                 </CardContent>
               </Card>
