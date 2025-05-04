@@ -5,6 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Github, Linkedin, Mail } from "lucide-react";
 import { useAnime } from "@/lib/hooks/useAnime";
 import { motion } from "framer-motion";
+import { Header } from "@/components/Header";
+// import { Footer } from "@/components/Footer";
+import Image  from "next/image";
 
 export default function Home() {
   const { 
@@ -21,9 +24,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-
+      <Header />
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center relative">
+      <section id="hero" className="h-screen flex items-center justify-center relative">
         <div 
           className="absolute inset-0 bg-[url('/topography.svg')] bg-repeat opacity-10"
           style={{ backgroundSize: 'cover' }}
@@ -69,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-background flex justify-center">
+      <section id="about" className="py-20 bg-background flex justify-center">
         <div className="container px-4 md:px-6 max-w-6xl">
           <motion.div
             ref={aboutRef}
@@ -105,14 +108,17 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div variants={fadeInLeft} className="flex items-center justify-center">
-              <div className="relative h-[300px] w-[300px] rounded-full bg-gradient-to-r from-primary to-secondary opacity-20" />
+              {/* <div className="relative h-[300px] w-[300px] rounded-full bg-gradient-to-r from-primary to-secondary opacity-20"> */}
+              <div className="relative h-[300px] w-[300px] rounded-full overflow-hidden">
+                <Image src="/wedding_photo.jpg" alt="Wedding photo of Nobel and Ali" fill className="object-cover" />
+              </div>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-muted flex justify-center">
+      <section id="projects" className="py-20 bg-muted flex justify-center">
         <div className="container px-4 md:px-6 max-w-6xl">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
@@ -174,6 +180,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      {/* <Footer /> */}
     </main>
   );
 }
