@@ -9,6 +9,8 @@ import { Header } from "@/components/Header";
 // import { Footer } from "@/components/Footer";
 import Image  from "next/image";
 
+const yearsOfExperience = new Date().getFullYear() - 2021;
+
 export default function Home() {
   const { 
     heroRef, 
@@ -84,9 +86,10 @@ export default function Home() {
             <motion.div variants={fadeInLeft} className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="text-muted-foreground md:text-xl">
-                I&apos;m a full-stack developer with a passion for creating elegant solutions to complex problems.
-                With expertise in modern web technologies, I build applications that are both beautiful and functional. 
-                My experience includes building robust orchestration platforms that handle complex workflows and microservices at scale. 
+                I&apos;m a full-stack developer 
+                with {yearsOfExperience} years of professional expertise in modern technologies.  
+                My experience includes building robust orchestration platforms that handle complex workflows, scalable microservices,
+                and elegant web applications. 
                 
               </p>
               <div className="grid grid-cols-3 gap-4">
@@ -137,7 +140,7 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <Card className="project-card">
                 <CardHeader>
-                  <CardTitle>Portfolio Website</CardTitle>
+                  <CardTitle><a href="https://github.com/nobelsmith/portfolio" className="hover:underline">Portfolio Website</a></CardTitle>
                   <CardDescription>A modern web application built with Next.js, Shadcn UI, and Tailwind CSS</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -152,7 +155,7 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <Card className="project-card">
                 <CardHeader>
-                  <CardTitle>Blog</CardTitle>
+                  <CardTitle><a href="https://github.com/nobelsmith/blog" className="hover:underline">Personal Blog</a></CardTitle>
                   <CardDescription>A simple blog built with Hugo and the PaperMod theme</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -175,6 +178,7 @@ export default function Home() {
                     Description of your third project goes here. Showcase the technical challenges you overcame.
                   </p>
                 </CardContent>
+                
               </Card>
             </motion.div>
           </motion.div>
