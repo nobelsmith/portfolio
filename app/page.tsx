@@ -134,16 +134,16 @@ export default function Home() {
             initial="hidden"
             animate={isProjectsInView ? "visible" : "hidden"}
             variants={staggerContainer}
-            className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
+            className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3"
           >
             {/* Project Card 1 */}
-            <motion.div variants={fadeInUp}>
-              <Card className="project-card">
+            <motion.div variants={fadeInUp} className="h-full">
+              <Card className="project-card h-full flex flex-col">
                 <CardHeader>
                   <CardTitle><a href="https://github.com/nobelsmith/portfolio" className="hover:underline">Portfolio Website</a></CardTitle>
                   <CardDescription>A modern web application built with Next.js, Shadcn UI, and Tailwind CSS</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-sm text-muted-foreground">
                     You&apos;re looking at it! It is a simple and clean portfolio website that showcases my projects and skills.
                   </p>
@@ -152,13 +152,13 @@ export default function Home() {
             </motion.div>
 
             {/* Project Card 2 */}
-            <motion.div variants={fadeInUp}>
-              <Card className="project-card">
+            <motion.div variants={fadeInUp} className="h-full">
+              <Card className="project-card h-full flex flex-col">
                 <CardHeader>
                   <CardTitle><a href="https://github.com/nobelsmith/blog" className="hover:underline">Personal Blog</a></CardTitle>
                   <CardDescription>A simple blog built with Hugo and the PaperMod theme</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-sm text-muted-foreground">
                     A personal blog where I share my thoughts and insights on technology, golf, and other topics I am passionate about.
                   </p>
@@ -167,18 +167,17 @@ export default function Home() {
             </motion.div>
 
             {/* Project Card 3 */}
-            <motion.div variants={fadeInUp}>
-              <Card className="project-card">
+            <motion.div variants={fadeInUp} className="h-full">
+              <Card className="project-card h-full flex flex-col">
                 <CardHeader>
-                  <CardTitle>Project Three</CardTitle>
-                  <CardDescription>A full-stack application with modern architecture</CardDescription>
+                  <CardTitle>Want to see your website here?</CardTitle>
+                  <CardDescription>Let&apos;s collaborate on your next automation need or web project</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-sm text-muted-foreground">
-                    Description of your third project goes here. Showcase the technical challenges you overcame.
+                    I am always looking for new projects to work on. If you have a project in mind, please reach out to <strong><a href="mailto:nobel.hooks@gmail.com" className="text-primary font-bold">me</a></strong>.
                   </p>
                 </CardContent>
-                
               </Card>
             </motion.div>
           </motion.div>
